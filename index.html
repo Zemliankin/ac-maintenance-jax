@@ -9,7 +9,8 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      background-color: #f9f9f9;
+      color: #333;
     }
     header {
       background-color: #007BFF;
@@ -18,15 +19,14 @@
       text-align: center;
     }
     .hero {
-      background-image: url("people-and-family-members.jpg");
-      background-size: cover;
-      background-position: center;
-      height: 300px;
       display: flex;
-      align-items: center;
+      flex-wrap: wrap;
       justify-content: center;
-      color: white;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+    .hero img {
+      max-width: 100%;
+      width: 50%;
+      height: auto;
     }
     .container {
       padding: 2em;
@@ -36,14 +36,27 @@
     .services, .reviews {
       margin-bottom: 2em;
     }
+    .reviews blockquote {
+      background-color: #fff;
+      border-left: 5px solid #007BFF;
+      margin: 1em 0;
+      padding: 1em;
+      font-style: italic;
+    }
     footer {
       background-color: #222;
       color: white;
       text-align: center;
       padding: 1em;
     }
-    img.review-stars {
-      width: 120px;
+    .google-link {
+      display: inline-block;
+      background-color: #fbbc05;
+      color: #000;
+      text-decoration: none;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      margin-top: 1em;
     }
   </style>
 </head>
@@ -55,7 +68,8 @@
 </header>
 
 <div class="hero">
-  <h2>15+ Years of Experience</h2>
+  <img src="people-and-family-members.jpg" alt="Happy family">
+  <img src="carousel-1.jpg" alt="Technician at work">
 </div>
 
 <div class="container">
@@ -71,11 +85,28 @@
   </section>
 
   <section class="reviews">
-    <h2>Customer Reviews</h2>
-    <img src="google-review-logo.png" alt="Google Review" class="review-stars" />
-    <p>★★★★★ — "Fast, friendly, and professional!"</p>
-    <p>★★★★★ — "Fixed our AC same day. Highly recommend!"</p>
-    <p>★★★★★ — "Great pricing and honest service."</p>
+    <h2>What Our Customers Say</h2>
+    <blockquote>
+      ★★★★★<br>
+      Last minute issue and they came to fix — no upselling, took care of the problem and house is cool again. Will recommend and use again if needed.
+    </blockquote>
+    <blockquote>
+      ★★★★★<br>
+      Very best experience with an AC technician I have ever had... I definitely will use them again.
+    </blockquote>
+    <blockquote>
+      ★★★★★<br>
+      Excellent service. Very punctual. My A/C is now working great. Nice recommendations given by Sergy... Coil maintenance service.
+    </blockquote>
+    <blockquote>
+      ★★★★★<br>
+      It is such a pleasure working with this company. Sergy is a great technician... very pleased with the whole process.
+    </blockquote>
+    <blockquote>
+      ★★★★★<br>
+      I have been using them for three years... Sergey would never upsell anything, always explained what needs to be done and why.
+    </blockquote>
+    <a class="google-link" href="https://www.google.com/search?q=AC+Maintenance+Jax&stick=H4sIAAAAAAAA_-NgU1I1qLCwSDVNTDE2MjVLNTQ3NDO0MqgwTko0NrAwS02zNDMyTU5OWsQq5Ois4JuYmVeSmpeYl5yq4JVYAQCVaceJPgAAAA" target="_blank">Read more reviews on Google</a>
   </section>
 </div>
 
